@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaya Belajar Siswa</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Gaya Belajar Siswa</h1>
+    <form id="quizForm">
+      <p>
+        <strong>1. </strong>Pilih salah satu yang paling menggambarkan cara Anda
+        memahami materi:
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question1" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question1" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question1" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p><strong>2. </strong>Bagaimana Anda lebih suka belajar materi baru?</p>
+      <div>
+        <label
+          ><input type="radio" name="question2" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question2" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question2" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p><strong>3. </strong>Apa yang biasanya Anda lakukan saat belajar?</p>
+      <div>
+        <label
+          ><input type="radio" name="question3" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question3" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question3" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p>
+        <strong>4. </strong>Ketika membaca buku, bagian mana yang menarik
+        perhatian Anda paling banyak?
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question4" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question4" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question4" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p>
+        <strong>5. </strong>Apa yang biasanya Anda lakukan ketika Anda tidak
+        dapat memahami sesuatu?
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question5" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question5" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question5" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p>
+        <strong>6. </strong>Apa yang paling Anda sukai ketika Anda mendapatkan
+        tugas?
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question6" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question6" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question6" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p>
+        <strong>7. </strong>Apa yang paling Anda sukai ketika Anda diberi
+        instruksi untuk suatu tugas?
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question7" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question7" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question7" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p>
+        <strong>8. </strong>Ketika Anda belajar sesuatu yang baru, apakah Anda
+        lebih suka membaca tentang hal itu, mendengar seseorang menjelaskannya,
+        atau mencoba melakukannya sendiri?
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question8" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question8" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question8" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p>
+        <strong>9. </strong>Saat Anda berbicara dengan seseorang, apa yang
+        biasanya Anda lakukan?
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question9" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question9" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question9" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <p>
+        <strong>10. </strong>Ketika Anda harus mempelajari sesuatu, apa yang
+        Anda lakukan terlebih dahulu?
+      </p>
+      <div>
+        <label
+          ><input type="radio" name="question10" value="visual" /> Visual</label
+        ><br />
+        <label
+          ><input type="radio" name="question10" value="auditory" />
+          Auditori</label
+        ><br />
+        <label
+          ><input type="radio" name="question10" value="kinesthetic" />
+          Kinestetik</label
+        >
+      </div>
+
+      <br />
+      <input type="submit" value="Lihat Hasil" />
+    </form>
+    <script>
+      document
+        .getElementById("quizForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Menghentikan aksi bawaan form
+
+          // Mengumpulkan jawaban
+          const answers = new FormData(this);
+          let answeredAllQuestions = true;
+
+          // Memeriksa apakah semua pertanyaan telah dijawab
+          for (let i = 1; i <= 10; i++) {
+            const questionName = "question" + i;
+            if (!answers.has(questionName)) {
+              answeredAllQuestions = false;
+              break;
+            }
+          }
+
+          // Jika semua pertanyaan telah dijawab, hitung hasil dan arahkan ke hasil
+          if (answeredAllQuestions) {
+            let visualCount = 0;
+            let auditoryCount = 0;
+            let kinestheticCount = 0;
+
+            for (const answer of answers.values()) {
+              if (answer === "visual") {
+                visualCount++;
+              } else if (answer === "auditory") {
+                auditoryCount++;
+              } else if (answer === "kinesthetic") {
+                kinestheticCount++;
+              }
+            }
+
+            // Menentukan gaya belajar dominan
+            let dominantStyle = "";
+            if (visualCount > auditoryCount && visualCount > kinestheticCount) {
+              dominantStyle = "visual";
+            } else if (
+              auditoryCount > visualCount &&
+              auditoryCount > kinestheticCount
+            ) {
+              dominantStyle = "auditory";
+            } else {
+              dominantStyle = "kinesthetic";
+            }
+
+            // Menampilkan hasil dan mengarahkan ke media sesuai gaya belajar
+            switch (dominantStyle) {
+              case "visual":
+                window.location.href =
+                  "https://images.app.goo.gl/stEnKcCu4uyPUREH8";
+                break;
+              case "auditory":
+                window.location.href =
+                  "https://images.app.goo.gl/dC8a4A94U77kv3x87";
+                break;
+              case "kinesthetic":
+                window.location.href =
+                  "https://images.app.goo.gl/UjNe3Zasy34CGKZq9";
+                break;
+              default:
+                console.error("Gagal menentukan gaya belajar dominan.");
+            }
+          } else {
+            // Jika tidak semua pertanyaan dijawab, tampilkan pesan kesalahan
+            alert("Harap jawab semua pertanyaan sebelum melihat hasil.");
+          }
+        });
+    </script>
+  </body>
+</html>
